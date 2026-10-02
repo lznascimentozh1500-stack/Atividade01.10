@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 560px;
+  margin: 40px auto;
+  padding: 0 16px;
+  color: #222;
+  background: #f5f7fa;
+}
+
+main {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-top: 0;
+  color: #173f70;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 6px;
+  background: #205b99;
+  color: #fff;
+}
+
+button:hover {
+  filter: brightness(0.92);
+}
+
+.erro {
+  display: none;
+  margin: 12px 0;
+  padding: 12px;
+  color: #8f1717;
+  background: #ffebeb;
+  border: 1px solid #e7a0a0;
+  border-radius: 6px;
+}
+
+.erro:not(:empty) {
+  display: block;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #fff;
+  line-height: 1.7;
+}
+
+.abaixo { color: #1565c0; }
+.normal { color: #2e7d32; }
+.sobrepeso { color: #ef6c00; }
+.obesidade { color: #c62828; }
+
+.historico-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.historico-cabecalho h2 {
+  font-size: 1.2rem;
+}
+
+.botao-secundario {
+  background: #555;
+  font-size: 0.9rem;
+}
+
+#historico {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-historico {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.botao-remover {
+  flex: 0 0 auto;
+  padding: 5px 9px;
+  background: #c62828;
+  font-size: 0.9rem;
+}
+
+.nota-peso {
+  margin: 8px 0 0;
+  color: #555;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
